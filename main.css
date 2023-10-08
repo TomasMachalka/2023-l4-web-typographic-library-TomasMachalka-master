@@ -25,7 +25,7 @@ img{
     width: 100%;
 }
 
-menu a{
+.Button{
     color: white;
     border: white solid;
     border-width: 2px;
@@ -35,7 +35,7 @@ menu a{
     transition-duration: 0.2s;
 }
 
-menu a:hover{
+.Button:hover{
     background-color: white;
     transition-duration: 0.2s;
     color: #507600;
@@ -149,6 +149,12 @@ section{
 
 .other_item_description{
     font-family: 'Kalam', italic;
+}
+
+footer{
+    background-color: #507600;
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 768px) {
