@@ -1,0 +1,141 @@
+html{
+    font-family: 'Kadwa', serif;
+}
+
+body{
+    color: black;
+    margin: 0;
+}
+
+main{
+    padding: 0em 6em;
+}
+
+li{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    padding: 6em;
+}
+
+menu a{
+    color: white;
+    border: white solid;
+    border-width: 2px;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 2em;
+    transition-duration: 0.2s;
+}
+
+menu a:hover{
+    background-color: white;
+    transition-duration: 0.2s;
+    color: #507600;
+    border-width: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color:#507600;
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 2em;
+    align-items: center;
+}
+
+
+.Profile{
+    display: flex;
+}
+
+.Profile img{
+    width: 15em
+}
+
+.citate{
+    background-color: #DADADA;
+    padding: .5em 2em;
+    font-family: 'Kalam', italic;
+    border-radius: 2em;
+}
+
+.Citate_name{
+    text-align: right;
+}
+
+
+/*Gallery*/
+
+.main-image {
+    max-width: 80%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    margin: 20px;
+}
+
+/* Selektor pro všechny obrázky v galerii */
+.thumbnail-images img {
+    max-width: 10%;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail {
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/*Other Profile section*/
+
+.other{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1em;
+    border-radius: 2em;
+}
+
+.other_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 2em;
+    transition: box-shadow 0.2s ease-in-out;
+    border: #507600 solid;
+}
+
+.other_item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
