@@ -7,10 +7,6 @@ body{
     margin: 0;
 }
 
-main{
-    padding: 0em 6em;
-}
-
 li{
     display: block;
 }
@@ -25,8 +21,8 @@ menu{
     justify-content: center;
 }
 
-section{
-    padding: 6em;
+img{
+    width: 100%;
 }
 
 menu a{
@@ -58,9 +54,20 @@ header{
     align-items: center;
 }
 
+section{
+    padding: 2em;
+}
 
 .Profile{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Profile_caption{
+    align-items: center;
+    padding: 0em;
+    text-align: center;
 }
 
 .Profile img{
@@ -118,10 +125,9 @@ header{
 /*Other Profile section*/
 
 .other{
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
     gap: 1em;
     border-radius: 2em;
+    padding: 0em;
 }
 
 .other_item {
@@ -143,4 +149,28 @@ header{
 
 .other_item_description{
     font-family: 'Kalam', italic;
+}
+
+@media (min-width: 768px) {
+    main{
+        padding: 0em 6em;
+    }
+
+    .Profile{
+        flex-direction: row;
+    }
+
+    .Profile_caption{
+        text-align: left;
+        padding: 2em;
+    }
+
+    section{
+        padding: 6em;
+    }
+
+    .other{
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+    }
 }
